@@ -22,16 +22,20 @@ greetFriend('Chris', 41, 'Leon', 35, 'Ada', 34);
 const gradeStudent = (score) => {
     if(score === 11) {
         console.log("Perfect");
+        return true;
     }else if(score >= 8 && score <=10) {
         console.log("Excellent");
+        return true;
     }else if(score >= 5 && score <=7) {
         console.log("Pass");
+        return true;
     }else if(score >11){
         console.log("Score Error!");
+        return false;
     }else{
         console.log("Not pass");
+        return false;
     }
-    return score >=5;
 }
 
 gradeStudent(12);
